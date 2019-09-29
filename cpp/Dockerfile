@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+LABEL maintainer="Kyle Galloway <kyle.galloway@cfdrc.com>"
 
 # Install system packages
 RUN apt-get update \
