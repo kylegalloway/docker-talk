@@ -1,14 +1,18 @@
-# Python Radar Reader
+# Django tutorial site
 
-A small project that reads radar files using the [LRose library](https://github.com/NCAR/lrose-core).
+A simple site based on the [Django tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/).
 
 ## Build with Docker
 
 ### Build Docker image
 
-`docker build -t reader_image .`
+```sh
+docker build -t py_image -f Dockerfile .
+```
 
 ### Build application
 
-```docker run --rm -it -v "$PWD":/src -u `id -u`:`id -g` reader_image /bin/bash```
+```sh
+docker run -it --rm --name=py -v "$PWD":/src -p 8000:8000 -u `id -u`:`id -g` py_image
+```
 
