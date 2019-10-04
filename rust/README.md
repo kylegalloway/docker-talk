@@ -16,7 +16,8 @@ Following the example [here](https://turbomack.github.io/posts/2019-07-28-rust-v
 
 ### Run
 
-Due to constraints, this app cannot be run from within a docker container.
+Due to time constraints, this app cannot be run from within a docker container. (This is possible with display forwarding.)
+
 However, you can build it inside the container and then run the app from your local computer.
 To do this, run `./target/debug/rust-gtk-counter`
 
