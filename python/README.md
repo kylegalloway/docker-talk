@@ -16,3 +16,4 @@ docker build -t py_image -f Dockerfile .
 docker run -it --rm --name=py -v "$PWD":/src -p 8000:8000 -u `id -u`:`id -g` py_image
 ```
 
+Then go to http://127.0.0.1:8000/polls to see the site.
