@@ -12,7 +12,6 @@ RUN apt-get update \
 
 # Build Eigen
 ENV EIGEN_VERSION 3.3.7
-# ENV EIGEN_VERSION default
 RUN wget -q http://bitbucket.org/eigen/eigen/get/${EIGEN_VERSION}.tar.gz -O /tmp/eigen.tar.gz \
    && tar -xzf /tmp/eigen.tar.gz -C /tmp \
    && cp -r /tmp/eigen-eigen-323c052e1731 /usr/src/eigen3 \
